@@ -653,31 +653,31 @@ const I18N = {
 
 const CATS = {
   work:   { color: "#ff6b6b", th: "🔧 วิธีทำงาน", en: "🔧 How you work" },
-  collab: { color: "#6390fa", th: "🤝 เรื่องคน", en: "🤝 People" },
-  innov:  { color: "#ffd93d", th: "💡 สิ่งใหม่", en: "💡 New things" },
-  impact: { color: "#4ecdc4", th: "🌏 ใจเขาใจเรา", en: "🌏 The bigger picture" },
+  collab: { color: "#6390fa", th: "🤝 การร่วมมือ", en: "🤝 Collaboration" },
+  innov:  { color: "#ffd93d", th: "💡 สร้างสิ่งใหม่", en: "💡 Create a New thing" },
+  impact: { color: "#4ecdc4", th: "🌏 สร้างคุณค่าให้สังคม", en: "🌏 Social Value" },
   self:   { color: "#c77dff", th: "🪞 ตอบตามจริง", en: "🪞 Be honest" }
 };
 
 // 16 ข้อ: สถานการณ์ที่เกิดได้กับทุกคน ทุกแผนก ทุกหน้างาน
 // แต่ละข้อมี 4 ตัวเลือก = 1 ตัวต่อ 1 มิติ ค่าเท่ากันหมด
 const SCENARIOS = [
-  { cat: "work", th: { text: "ในช่วง 3 เดือนที่ผ่านมา เมื่อเจองานซ้ำที่กินเวลา คุณทำอะไรบ่อยที่สุด?", scenario: "นึกถึงเหตุการณ์ที่เกิดขึ้นจริงล่าสุด" }, en: { text: "Over the past 3 months, when you run into repetitive, time-consuming work, what do you most often do?", scenario: "Think of a real, recent example" }, options: [
-    { dim: "DX1", th: "ปรับขั้นตอนหรือทำตัวช่วยให้ใช้เวลาน้อยลง", en: "Adjust the process or build a helper to reduce time" },
-    { dim: "DX2", th: "คุยกับคนที่ทำงานเดียวกันเพื่อหาวิธีร่วมกัน", en: "Talk to others doing the same work to find a way together" },
-    { dim: "DX3", th: "ทดลองวิธีใหม่ในวงเล็กแล้วดูผล", en: "Try a new approach on a small scale and see how it goes" },
-    { dim: "DX4", th: "ตรวจว่าการเปลี่ยนวิธีจะกระทบผู้ใช้หรือความปลอดภัยอย่างไร", en: "Check how changing the method would affect users or safety" },
+  { cat: "work", th: { text: "ในช่วง 3 เดือนที่ผ่านมา เมื่อเจองานซ้ำๆที่ทำให้ใช้เวลานาน คุณทำอะไรบ่อยที่สุด?", scenario: "นึกถึงเหตุการณ์ที่เกิดขึ้นจริงล่าสุด" }, en: { text: "Over the past 3 months, when you run into repetitive, time-consuming work, what do you most often do?", scenario: "Think of a real, recent example" }, options: [
+    { dim: "DX1", th: "ปรับขั้นตอนหรือหาตัวช่วย เพื่อใช้เวลาน้อยลง", en: "Adjust the process or build a helper to reduce time" },
+    { dim: "DX2", th: "ปรึกษากับคนที่ทำงานเดียวกันเพื่อหาวิธีร่วมกัน", en: "Discussed with colleagues who perform the same tasks to find solutions together." },
+    { dim: "DX3", th: "ทดลองแนวทางใหม่ในขอบเขตเล็กๆแล้วดูผลที่เกิดขึ้น", en: "Try a new approach on a small scale and see how it goes" },
+    { dim: "DX4", th: "สังเกตว่างานซ้ำนี้ส่งผลกระทบอะไรกับผู้ใช้หรือเพื่อนร่วมงานบ้าง", en: "Observed how these repetitive tasks impact users or colleagues." },
   ] },
-  { cat: "collab", th: { text: "เมื่องานติดขัดเพราะต้องรออีกฝ่าย คุณมักเริ่มจากอะไร?", scenario: "เลือกสิ่งที่คุณทำจริง ไม่ใช่สิ่งที่คิดว่าควรทำ" }, en: { text: "When work stalls because you're waiting on another party, what do you usually start with?", scenario: "Pick what you actually do, not what you think you should do" }, options: [
-    { dim: "DX1", th: "ตรวจสอบจุดส่งต่องานและจัดเตรียมข้อมูลให้ครบถ้วน เพื่อป้องกันการส่งงานแก้ไขย้อนกลับ", en: "Review handoff points and ensure complete info to minimize rework." },
-    { dim: "DX2", th: "นัดคุยสั้น ๆ เพื่อให้ทั้งสองฝ่ายเห็นปัญหาเดียวกัน", en: "Set up a quick chat so both sides see the same problem" },
-    { dim: "DX3", th: "ลองช่องทางหรือรูปแบบการส่งต่องานแบบใหม่", en: "Try a new channel or format for handing work over" },
-    { dim: "DX4", th: "ถามว่าเงื่อนไขของแต่ละฝ่ายและผู้รับผลมีอะไรบ้าง", en: "Ask what constraints each side has and who's affected by the outcome" },
+  { cat: "collab", th: { text: "เมื่องานติดขัดเพราะต้องรออีกฝ่าย สิ่งแรกที่คุณจะทำคืออะไร?", scenario: "เลือกสิ่งที่คุณทำจริง ไม่ใช่สิ่งที่คิดว่าควรทำ" }, en: { text: "When work stalls because you're waiting on another party, What would you do first?", scenario: "Pick what you actually do, not what you think you should do" }, options: [
+    { dim: "DX1", th: "ตรวจสอบขั้นตอนการส่งต่องานของตนเองและจัดเตรียมข้อมูลให้ครบถ้วน เพื่อลดความผิดพลาดในอนาคต", en: "Review handoff points and ensure complete info to minimize rework." },
+    { dim: "DX2", th: "นัดคุยสั้น ๆ เพื่อให้ทั้งสองฝ่ายเห็นปัญหาเดียวกัน", en: "Arrange a short discussion to ensure both parties have a shared understanding of the issue.ฏ" },
+    { dim: "DX3", th: "ลองวิธีใหม่ที่ยังไม่เคยทำเพื่อดันให้งานเดินต่อได้", en: "Try something you haven't tried before to get things moving again" },
+    { dim: "DX4", th: "พิจารณาว่าความล่าช้านี้จะกระทบใครอื่นบ้าง และจะจัดการอย่างเป็นธรรมกับทุกฝ่ายได้อย่างไร", en: "Consider who else this delay might affect, and how to handle it fairly for everyone involved" },
   ] },
   { cat: "innov", th: { text: "เมื่อมีเครื่องมือดิจิทัลใหม่เข้ามา คุณมักทำอะไรเป็นอันดับแรก?", scenario: "ของใหม่มาแทนวิธีที่คุ้นเคย" }, en: { text: "When a new digital tool arrives, what do you usually do first?", scenario: "The new thing is replacing a method you're used to" }, options: [
-    { dim: "DX1", th: "เทียบเวลาหรือข้อผิดพลาดกับวิธีเดิม", en: "Compare the time or error rate against the old method" },
+    { dim: "DX1", th: "เปรียบเทียบข้อดีและข้อเสียกับวิธีแบบเดิม", en: "Compare the advantages and disadvantages with the current approach." },
     { dim: "DX2", th: "หาคนหลายบทบาทมาลองใช้และแลกเปลี่ยนกัน", en: "Get people in different roles to try it and compare notes" },
-    { dim: "DX3", th: "ทดลองกับงานจริงขนาดเล็กเพื่อเรียนรู้เร็ว", en: "Try it on a small real task to learn quickly" },
+    { dim: "DX3", th: "ทดลองกับงานจริงในขอบเขตเล็กๆเพื่อเรียนรู้อย่างรวดเร็ว", en: "Pilot the solution on a small scale to learn and gain insights quickly." },
     { dim: "DX4", th: "ตรวจผลต่อผู้ใช้ การเข้าถึง ข้อมูล และความปลอดภัย", en: "Check the effect on users, accessibility, data, and safety" },
   ] },
   { cat: "impact", th: { text: "เมื่อคุณพบข้อผิดพลาดที่อาจส่งผลต่อคนอื่น คุณทำอย่างไร?", scenario: "เหตุการณ์เกิดขึ้นแล้วและต้องจัดการ" }, en: { text: "When you find a mistake that could affect others, what do you do?", scenario: "It's already happened and needs handling" }, options: [
