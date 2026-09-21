@@ -728,13 +728,13 @@ const SCENARIOS = [
     { dim: "DX3", th: "กำหนดแนวทางใหม่เพื่อนำไปทดลองและเรียนรู้ในรอบถัดไป", en: "Develop a new approach to test and learn from in the next time." },
     { dim: "DX4", th: "ทบทวนผลที่เกิดกับผู้ใช้ คนทำงาน และทรัพยากร", en: "Review the impact on users, the people who did the work, and resources" },
   ] },
-  { cat: "collab", th: { text: "เมื่อคุณไม่เห็นด้วยกับแนวทางของหัวหน้า คุณมักทำอย่างไร?", scenario: "ยังต้องรักษาความสัมพันธ์และให้งานเดินต่อ" }, en: { text: "When you disagree with your manager's approach, what do you usually do?", scenario: "You still need to keep the relationship intact and the work moving" }, options: [
-    { dim: "DX1", th: "เสนอทางเลือกใหม่ๆพร้อมข้อมูลเรื่องเวลา คุณภาพ หรือต้นทุน", en: "Propose an new alternative backed with data on time, quality, or cost" },
-    { dim: "DX2", th: "คุยตรงๆกับผู้เกี่ยวข้องเพื่อสร้างความเข้าใจร่วมกัน", en: "Talk directly with those involved to build shared understanding" },
+  { cat: "collab", th: { text: "เมื่อคุณไม่เห็นด้วยกับแนวทางของหัวหน้า คุณมักจะทำอย่างไร?", scenario: "ยังต้องรักษาความสัมพันธ์และให้งานเดินต่อ" }, en: { text: "When you disagree with your manager's approach, what do you usually do?", scenario: "You still need to keep the relationship intact and the work moving" }, options: [
+    { dim: "DX1", th: "เสนอทางเลือกใหม่ๆพร้อมข้อมูล", en: "Propose an new alternative backed with data" },
+    { dim: "DX2", th: "คุยตรงๆเพื่อสร้างความเข้าใจร่วมกัน", en: "Talk directly to build shared understanding" },
     { dim: "DX3", th: "ขอทดลองทางเลือกเล็กๆ แล้วนำผลมาเทียบ", en: "Ask to trial a small alternative and compare the results" },
     { dim: "DX4", th: "ตั้งคำถามถึงผลกระทบ ความเสี่ยง และกลุ่มที่เกี่ยวข้อง", en: "Raise questions about impact, risk, and who's involved" },
   ] },
-  { cat: "innov", th: { text: "เมื่อการทดลองครั้งแรกไม่สำเร็จ คุณมักทำอะไร?", scenario: "มีข้อมูลบางส่วนแต่ยังสรุปไม่ได้" }, en: { text: "When your first trial doesn't succeed, what do you usually do?", scenario: "You have some data but can't draw a conclusion yet" }, options: [
+  { cat: "innov", th: { text: "เมื่อการทดลองครั้งแรกไม่สำเร็จ คุณมักจะทำอะไร?", scenario: "มีข้อมูลบางส่วนแต่ยังสรุปไม่ได้" }, en: { text: "When your first trial doesn't succeed, what do you usually do?", scenario: "You have some data but can't draw a conclusion yet" }, options: [
     { dim: "DX1", th: "หาสาเหตุและแก้ไขตัวแปรที่ทำให้ไม่สำเร็จ", en: "Identify the root cause and address the factors contributing to the failure." },
     { dim: "DX2", th: "ชวนคนที่มีมุมมองต่างมาช่วยประเมินผลลัพธ์", en: "Bring in people with different perspectives to help the results evaluation" },
     { dim: "DX3", th: "ปรับแนวทางหรือวิธีการแล้วทดลองรอบถัดไปอย่างรวดเร็ว", en: "Adjust the process or method and run the next trial quickly" },
@@ -743,7 +743,7 @@ const SCENARIOS = [
   { cat: "impact", th: { text: "เมื่อต้องตัดสินใจเรื่องข้อมูลของลูกค้าหรือพนักงาน คุณมักเริ่มจากอะไร?", scenario: "ข้อมูลช่วยให้งานง่ายขึ้น แต่มีความละเอียดอ่อน" }, en: { text: "When deciding something involving customer or employee data, what do you usually start with?", scenario: "The data would make the work easier, but it's sensitive" }, options: [
     { dim: "DX1", th: "กำหนดข้อมูลที่จำเป็นและขั้นตอนการควบคุมให้ชัด", en: "Define exactly what data is needed and what controls apply" },
     { dim: "DX2", th: "ให้เจ้าของงาน ผู้ใช้ และผู้เชี่ยวชาญร่วมพิจารณา", en: "Bring in the work owner, users, and experts to weigh in" },
-    { dim: "DX3", th: "ทดลองด้วยข้อมูลจำกัดหรือข้อมูลทดสอบก่อน", en: "Trial it first with limited or test data" },
+    { dim: "DX3", th: "ทดลองด้วยข้อมูลที่จำกัดหรือข้อมูลทดสอบก่อน", en: "Trial it first with limited or test data" },
     { dim: "DX4", th: "พิจารณาความเป็นส่วนตัว ความเป็นธรรม และผู้ได้รับผลกระทบ", en: "Consider privacy, fairness, and who's affected" },
   ] },
   { cat: "work", th: { text: "เมื่อพบว่ารายงานหรือข้อมูลที่คุณทำมาใช้เวลาในการทำมากแต่มีคนใช้งานหรือดูน้อย คุณมักทำอย่างไร?", scenario: "ยังไม่มีใครขอให้เปลี่ยน" }, en: { text: "When you realize that a report or information you spend a lot of time preparing is rarely used or viewed, what do you usually do?" }, options: [
@@ -752,46 +752,46 @@ const SCENARIOS = [
     { dim: "DX3", th: "ทำรูปแบบใหม่ให้ผู้ใช้ลองใช้งาน", en: "Build a small new format for users to try" },
     { dim: "DX4", th: "ตรวจว่าใครยังจำเป็นต้องใช้งานและจะเสียประโยชน์หรือไม่หากยกเลิกการทำไป", en: "Assess who still relies on the report and whether discontinuing it would negatively impact them." },
   ] },
-  { cat: "collab", th: { text: "เมื่อทีมต่างฝ่ายใช้คำหรือข้อมูลคนละแบบ คุณมักทำอะไร?", scenario: "ความเข้าใจไม่ตรงกันเริ่มทำให้งานช้า" }, en: { text: "When different teams use different terms or data definitions, what do you usually do?", scenario: "The mismatch is starting to slow work down" }, options: [
+  { cat: "collab", th: { text: "เมื่อทีมต่างฝ่ายใช้คำหรือข้อมูลคนละแบบ คุณมักจะทำอย่างไร?", scenario: "ความเข้าใจไม่ตรงกันเริ่มทำให้งานช้า" }, en: { text: "When different teams use different terms or data definitions, what do you usually do?", scenario: "The mismatch is starting to slow work down" }, options: [
     { dim: "DX1", th: "ทำคำนิยามและแหล่งข้อมูลกลางให้ใช้งานง่าย", en: "Create shared definitions and a central data source that's easy to use" },
-    { dim: "DX2", th: "พาทุกฝ่ายตกลงความหมายและเจ้าของข้อมูลร่วมกัน", en: "Get everyone to agree on meaning and data ownership together" },
-    { dim: "DX3", th: "ลองต้นแบบมุมมองข้อมูลที่เชื่อมกัน", en: "Try a prototype view that connects the data together" },
+    { dim: "DX2", th: "ให้ทุกฝ่ายตกลงความหมายและเจ้าของข้อมูลร่วมกัน", en: "Get everyone to agree on meaning and data ownership together" },
+    { dim: "DX3", th: "สร้างตัวอย่าง Dashboard เพื่อให้เห็นข้อมูลชุดเดียวกัน", en: "Create a sample dashboard to provide everyone with the same view of the data." },
     { dim: "DX4", th: "ตรวจว่าความคลาดเคลื่อนกระทบการตัดสินใจของใครบ้าง", en: "Check whose decisions the mismatch is affecting" },
   ] },
-  { cat: "innov", th: { text: "เมื่อเห็นแนวปฏิบัติที่ดีจากองค์กรอื่น คุณมักทำอะไร?", scenario: "แนวทางนั้นยังไม่แน่ว่าจะเข้ากับบริบทของคุณ" }, en: { text: "When you see a good practice from another organization, what do you usually do?", scenario: "It's not certain the approach will fit your context" }, options: [
-    { dim: "DX1", th: "แยกองค์ประกอบที่ช่วยลดเวลา คุณภาพ หรือต้นทุน", en: "Break down which parts save time, improve quality, or cut cost" },
-    { dim: "DX2", th: "หาเจ้าของเรื่องและผู้ใช้มาช่วยประเมินความเหมาะสม", en: "Get the owner and users to help assess the fit" },
+  { cat: "innov", th: { text: "เมื่อเห็นแนวปฏิบัติที่ดีจากองค์กรอื่น คุณมักทจะทำอย่างไร?", scenario: "แนวทางนั้นยังไม่แน่ว่าจะเข้ากับบริบทของคุณ" }, en: { text: "When you see a good practice from another organization, what do you usually do?", scenario: "It's not certain the approach will fit your context" }, options: [
+    { dim: "DX1", th: "วิเคราะห์ว่าส่วนใดช่วยเพิ่มประสิทธิภาพ ลดต้นทุน หรือยกระดับคุณภาพงาน", en: "Analyze which elements improve efficiency, reduce cost, or enhance quality" },
+    { dim: "DX2", th: "ชวนผู้เกี่ยวข้องและผู้ใช้งานร่วมกันประเมินว่าเหมาะกับองค์กรหรือไม่", en: "Engage stakeholders and users to assess whether it fits the organization" },
     { dim: "DX3", th: "ดัดแปลงแล้วทดลองในบริบทเล็ก ๆ ของเรา", en: "Adapt it and try it in a small context of your own" },
-    { dim: "DX4", th: "ตรวจผลต่อคน กระบวนการ และข้อจำกัดของบริบทเรา", en: "Check its effect on people, process, and the constraints of your context" },
+    { dim: "DX4", th: "ประเมินผลกระทบต่อคน กระบวนการ ข้อมูล และเป้าหมายขององค์กรในภาพรวม", en: "Evaluate its impact on people, processes, data, and organizational goals as a whole" },
   ] },
-  { cat: "impact", th: { text: "เมื่อต้องเลือกระหว่างความเร็วกับการรับฟังผู้ใช้ คุณมักทำอย่างไร?", scenario: "กำหนดส่งใกล้เข้ามา" }, en: { text: "When you have to choose between speed and listening to users, what do you usually do?", scenario: "The deadline is getting close" }, options: [
+  { cat: "impact", th: { text: "เมื่อต้องเลือกระหว่างความเร็วกับการรับฟังผู้ใช้ คุณมักจะทำอย่างไร?", scenario: "กำหนดส่งใกล้เข้ามา" }, en: { text: "When you have to choose between speed and listening to users, what do you usually do?", scenario: "The deadline is getting close" }, options: [
     { dim: "DX1", th: "กำหนดจุดตัดสินใจและเกณฑ์ขั้นต่ำที่งานต้องผ่าน", en: "Set decision points and the minimum bar the work must clear" },
     { dim: "DX2", th: "รวบรวมตัวแทนผู้ใช้และทีมให้คุยเฉพาะประเด็นสำคัญ", en: "Bring together user representatives and the team to focus on key issues only" },
-    { dim: "DX3", th: "ปล่อยต้นแบบจำกัดกลุ่มเพื่อเรียนรู้เร็ว", en: "Release a limited-group prototype to learn quickly" },
-    { dim: "DX4", th: "รักษาการรับฟังกลุ่มที่ได้รับผลสูงหรือเข้าถึงยาก", en: "Keep listening to groups who are highly affected or hard to reach" },
+    { dim: "DX3", th: "เลือกทำส่วนที่สำคัญที่สุดก่อน และทดสอบผลลัพธ์ก่อนส่งมอบเต็มรูปแบบ", en: "Focus on the most critical part first and test the outcome before full delivery." },
+    { dim: "DX4", th: "รักษาการรับฟังกลุ่มผู้ใช้ เพื่อให้ผลลัพธ์ตอบโจทย์ในระยะยาว", en: "Continue listening to groups user to ensure long-term value" },
   ] },
-  { cat: "work", th: { text: "เมื่อขั้นตอนที่คุณรับผิดชอบมีปัญหาซ้ำ คุณมักทำอะไร?", scenario: "แก้เฉพาะหน้ามาหลายครั้งแล้ว" }, en: { text: "When a process you're responsible for keeps having the same problem, what do you usually do?", scenario: "You've patched it on the spot several times already" }, options: [
-    { dim: "DX1", th: "เก็บข้อมูล หาเหตุราก และกำหนดมาตรฐานใหม่", en: "Gather data, find the root cause, and set a new standard" },
-    { dim: "DX2", th: "ทำเวิร์กโฟลว์ร่วมกับต้นทางและปลายทาง", en: "Build the workflow together with both the upstream and downstream sides" },
-    { dim: "DX3", th: "ออกแบบการทดลองเพื่อเปลี่ยนสมมติฐานเดิม", en: "Design an experiment to challenge the old assumption" },
-    { dim: "DX4", th: "วิเคราะห์ผลต่อคนทำงาน ผู้ใช้ และความเสี่ยงสะสม", en: "Analyze the effect on staff, users, and accumulated risk" },
+  { cat: "work", th: { text: "เมื่อขั้นตอนที่คุณรับผิดชอบมีปัญหาซ้ำ คุณมักจะทำอะไร?", scenario: "แก้ปัญหามาหลายครั้งแล้ว" }, en: { text: "When a process you're responsible for keeps having the same problem, what do you usually do?", scenario: "You've solved this problem many times before." }, options: [
+    { dim: "DX1", th: "เก็บข้อมูล หาสาเหตุ และแนวทางการแก้ไขปัญหา", en: "Gather data, identify root causes, and explore solutions." },
+    { dim: "DX2", th: "ชวนผู้เกี่ยวข้องร่วมกันทบทวนกระบวนการและหาทางป้องกันไม่ให้เกิดซ้ำ", en: "Work with stakeholders to review the process and prevent the issue from recurring." },
+    { dim: "DX3", th: "ทดลองแนวทางใหม่และวัดผล เพื่อค้นหาวิธีที่ดีกว่าเดิม", en: "Test new approaches and measure results to find a better way forward." },
+    { dim: "DX4", th: "วิเคราะห์ผลกระทบต่อผู้ใช้งาน กระบวนการ และความเสี่ยงในภาพรวม", en: "Assess the impact on users, processes, and overall risks." },
   ] },
-  { cat: "collab", th: { text: "เมื่อเพื่อนร่วมงานทำงานช้ากว่าที่คาด คุณมักทำอย่างไร?", scenario: "งานของคุณเริ่มได้รับผลกระทบ" }, en: { text: "When a colleague is working slower than expected, what do you usually do?", scenario: "Your own work is starting to be affected" }, options: [
-    { dim: "DX1", th: "ช่วยแยกขั้นตอนและหาจุดที่ติด", en: "Help break down the steps and find where it's stuck" },
+  { cat: "collab", th: { text: "เมื่อเพื่อนร่วมงานทำงานช้ากว่าที่คาด คุณมักจะทำอย่างไร?", scenario: "งานของคุณเริ่มได้รับผลกระทบ" }, en: { text: "When a colleague is working slower than expected, what do you usually do?", scenario: "Your own work is starting to be affected" }, options: [
+    { dim: "DX1", th: "ช่วยวิเคราะห์สาเหตุและหาจุดที่ทำให้งานล่าช้า", en: "Help identify the root cause and pinpoint where the work is getting delayed" },
     { dim: "DX2", th: "ถามตรง ๆ ว่าต้องการข้อมูลหรือความช่วยเหลือจากใคร", en: "Ask directly what information or help they need, and from whom" },
-    { dim: "DX3", th: "ลองสลับวิธีหรือเครื่องมือแล้วเทียบผล", en: "Try switching methods or tools and compare the results" },
-    { dim: "DX4", th: "ถามถึงข้อจำกัดและผลกระทบก่อนสรุปสาเหตุ", en: "Ask about constraints and impact before concluding the cause" },
+    { dim: "DX3", th: "ลองปรับวิธีทำงานหรือใช้เครื่องมือใหม่เพื่อให้งานเดินหน้าได้เร็วขึ้น", en: "Try a different approach or tool to help move the work forward faster" },
+    { dim: "DX4", th: "ทำความเข้าใจข้อจำกัดและผลกระทบต่อทุกฝ่ายก่อนตัดสิน", en: "Understand the constraints and impact on all parties before conclusions" },
   ] },
 ];
 // 8 ข้อสุดท้าย: 4 ข้อทางตรง + 4 ข้อทางกลับ ถามตรง ๆ ว่าทำจริงบ่อยแค่ไหน (0-3 คะแนน)
 const LEVELS = [
-  { dim:"DX1", reverse:false, cat:"self", th:{text:"ในช่วง 3 เดือนที่ผ่านมา คุณปรับขั้นตอน แม่แบบ หรือเครื่องมือให้งานง่ายขึ้นบ่อยแค่ไหน?",scenario:"นับเฉพาะสิ่งที่คุณลงมือทำจริง"}, en:{text:"Over the past 3 months, how often have you adjusted a process, template, or tool to make work easier?",scenario:"Count only what you actually did yourself"} },
-  { dim:"DX1", reverse:true, cat:"self", th:{text:"เมื่อวิธีเดิมยังพอใช้ได้ คุณมักปล่อยไว้โดยไม่ตรวจว่าปรับให้ดีขึ้นได้หรือไม่บ่อยแค่ไหน?",scenario:"ข้อนี้ถามพฤติกรรมตรงข้าม"}, en:{text:"When the old method still just about works, how often do you leave it as-is without checking if it could be improved?",scenario:"This question asks about the opposite behavior"} },
-  { dim:"DX2", reverse:false, cat:"self", th:{text:"ในช่วง 3 เดือนที่ผ่านมา คุณทำงานหรือแก้ปัญหาร่วมกับคนนอกทีมบ่อยแค่ไหน?",scenario:"นับเฉพาะครั้งที่มีการแลกเปลี่ยนจริง"}, en:{text:"Over the past 3 months, how often have you worked or solved problems together with people outside your team?",scenario:"Count only times there was genuine exchange"} },
+  { dim:"DX1", reverse:false, cat:"self", th:{text:"ในช่วง 3 เดือนที่ผ่านมา คุณปรับขั้นตอน workflow หรือเครื่องมือให้งานง่ายขึ้นบ่อยแค่ไหน?",scenario:"นับเฉพาะสิ่งที่คุณลงมือทำจริง"}, en:{text:"Over the past 3 months, how often have you adjusted a process, workflow, or tool to make work easier?",scenario:"Count only what you actually did yourself"} },
+  { dim:"DX1", reverse:true, cat:"self", th:{text:"เมื่อวิธีเดิมยังใช้ได้อยู่ คุณมักมองหาโอกาสปรับปรุงให้ดีขึ้นบ่อยแค่ไหน?",scenario:"ข้อนี้ถามพฤติกรรมตรงข้าม"}, en:{text:"When the old method still just about works, how often do you leave it as-is without checking if it could be improved?",scenario:"This question asks about the opposite behavior"} },
+  { dim:"DX2", reverse:false, cat:"self", th:{text:"ในช่วง 3 เดือนที่ผ่านมา คุณทำงานหรือแก้ปัญหาร่วมกับคนนอกทีมบ่อยแค่ไหน?",scenario:"นับเฉพาะครั้งที่มีการแลกเปลี่ยนจริง"}, en:{text:"Over the past 3 months, How often do you look for opportunities to improve a process, even when the current way is still working?",scenario:"Count only times there was genuine exchange"} },
   { dim:"DX2", reverse:true, cat:"self", th:{text:"เมื่อปัญหาเกี่ยวข้องหลายฝ่าย คุณมักแก้เฉพาะส่วนของตนโดยไม่ประสานฝ่ายอื่นบ่อยแค่ไหน?",scenario:"ข้อนี้ถามพฤติกรรมตรงข้าม"}, en:{text:"When a problem involves several parties, how often do you fix only your own part without coordinating with the others?",scenario:"This question asks about the opposite behavior"} },
   { dim:"DX3", reverse:false, cat:"self", th:{text:"ในช่วง 3 เดือนที่ผ่านมา คุณทดลองวิธีหรือเครื่องมือที่ยังไม่เคยใช้บ่อยแค่ไหน?",scenario:"การทดลองที่ไม่สำเร็จก็นับ"}, en:{text:"Over the past 3 months, how often have you tried a method or tool you'd never used before?",scenario:"Unsuccessful attempts count too"} },
-  { dim:"DX3", reverse:true, cat:"self", th:{text:"เมื่อมีแนวทางใหม่ คุณมักรอให้คนอื่นพิสูจน์ก่อนเสมอบ่อยแค่ไหน?",scenario:"ข้อนี้ถามพฤติกรรมตรงข้าม"}, en:{text:"When a new approach comes up, how often do you always wait for others to prove it first?",scenario:"This question asks about the opposite behavior"} },
-  { dim:"DX4", reverse:false, cat:"self", th:{text:"ในช่วง 3 เดือนที่ผ่านมา คุณตรวจผลต่อผู้ใช้ ความปลอดภัย ความเป็นธรรม หรือสิ่งแวดล้อมก่อนตัดสินใจบ่อยแค่ไหน?",scenario:"นับเฉพาะตอนที่มีผลต่อการตัดสินใจจริง"}, en:{text:"Over the past 3 months, how often have you checked the effect on users, safety, fairness, or the environment before deciding?",scenario:"Count only when it actually influenced the decision"} },
+  { dim:"DX3", reverse:true, cat:"self", th:{text:"เมื่อมีแนวทางใหม่ คุณมักรอให้คนอื่นพิสูจน์ก่อนเสมอบ่อยแค่ไหน?",scenario:"ข้อนี้ถามพฤติกรรมตรงข้าม"}, en:{text:"When a new approach comes up, How often do you wait for others to try out and prove a new approach before you adopt it yourself?",scenario:"This question asks about the opposite behavior"} },
+  { dim:"DX4", reverse:false, cat:"self", th:{text:"ในช่วง 3 เดือนที่ผ่านมา คุณตรวจผลต่อผู้ใช้ ความปลอดภัย และสิ่งแวดล้อมก่อนตัดสินใจบ่อยแค่ไหน?",scenario:"นับเฉพาะตอนที่มีผลต่อการตัดสินใจจริง"}, en:{text:"Over the past 3 months, how often have you checked the effect on users, safety, fairness, or the environment before deciding?",scenario:"Count only when it actually influenced the decision"} },
   { dim:"DX4", reverse:true, cat:"self", th:{text:"เมื่อเป้าหมายงานสำเร็จ คุณมักไม่ย้อนดูผลกระทบที่เกิดกับคนอื่นหรือทรัพยากรบ่อยแค่ไหน?",scenario:"ข้อนี้ถามพฤติกรรมตรงข้าม"}, en:{text:"Once a goal is achieved, how often do you skip looking back at the impact on others or resources?",scenario:"This question asks about the opposite behavior"} },
 ];
 const LEVEL_OPTIONS = [
